@@ -65,6 +65,7 @@ void swap(float* x, float* y){ //function used to swap two of the numbers when o
 
 void hightolow(float sales[12]){ //function for sorting out the sales
     printf("\nSales Report (Highest to Lowest):\n");
+    printf("  Month     Sales\n");
     char *sortmonths[12] = {"January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     int i, j, max_i;
     for (i = 0; i < 11; i++) { 
