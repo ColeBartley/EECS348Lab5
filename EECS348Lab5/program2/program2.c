@@ -8,9 +8,10 @@ int main(){
         // }
         printf("Enter 0 or 1 to STOP\nEnter the NFL score: ");
         scanf("%d", &score);
-        if (score == 0){ //the reason this is added is my code will give an output if 0 is pressed (it will say 0 for each) so to prevent that, this is here
+        if (score<=1){ //the reason this is added is my code will give an output if 0 is pressed (it will say 0 for each) so to prevent that, this is here
             return (0);
         }
+        printf("possible combinations of scoring plays:\n");
         for (int i=0; i<=score; i=i+6){ //represents touchdown
             for (int j=0; j<=score; j=j+3){ //represents field goal
                 for (int k=0; k<=score; k=k+2){ //represents safety
